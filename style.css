@@ -253,29 +253,33 @@
     width: 95%;
     margin:auto;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2,1fr);
     gap: 1.5rem;
     align-items: flex-end;
     margin-top: 3.3rem;
-    
+    justify-content: space-between;
 }
 
-
+.feature-flower-details > :nth-child(3){
+    grid-column: 1/-1;
+    width: 50%;
+    margin: 0 auto;
+}
 
 .feature-flower-details .flower-img {
     display: flex;
-    width: 100%;
+    width: 150px;
     flex: 1;
-    height: auto;
+    height: 150px;
     justify-content: center;
-    padding: 2rem 1.5rem 0 1.5rem;
+    padding: 1.5rem 1.1rem 0 1.1rem;
     border-radius: 300px 300px 0 0;
     box-sizing: border-box;
 }
 
 .feature-flower-details .flower-img img{
     width: 80%;
-    max-width: 80%;
+    max-width: 40%;
     height: 80%;
     display: block;
 
