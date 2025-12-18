@@ -1,5 +1,6 @@
 :root {
     --background-color: rgba(229, 84, 115, 0.2);
+    --background-secondary-color: rgba(229, 84, 115, 0.1);
     --paragraph-color: rgba(39, 39, 39, 0.6);
     --background-color-button: rgb(229, 84, 115);
 }
@@ -161,7 +162,6 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(39, 39, 39,0.05);
-    margin-bottom: 200px;
     padding: 2rem 0;
 }
 
@@ -184,7 +184,56 @@
 }
 
 
+
+/* for  sign up section*/
+
+.sign-up{
+    width: 100%;
+    height: 400px;
+    background-color: var(--background-secondary-color);
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-up-container{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.2rem;
+}
+.sign-up-container .sign-up-contain{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 60%;
+    text-align: center;
+}
+
+.sign-up-contain span{
+    color: red;
+    font-weight: 800;
+}
+
+.sign-up-container .sign-up-img{
+    display: flex;
+    align-items: flex-end;
+    height: auto;
+}
+
+.sign-up-container .sign-up-img img{
+   max-height: 250px;
+}
+
+/* media query */
+
 /* for small device */
+
+
+
 @media screen and (max-width: 576px) {
 
    
@@ -235,6 +284,7 @@
 }
 
 .feature-heading h2{
+    font-size: 1.6rem;
     text-align: center;
 }
 
@@ -293,6 +343,35 @@
    flex-direction: column;
    gap: 2.2rem;
 }
+
+
+/* sin up section */
+
+.sign-up{
+   
+    height: auto;  
+}
+
+.sign-up-container{
+    width: 80%;
+    flex-direction: column;
+    gap: 4.2rem;
+    padding-top: 1.9rem;
+    padding-bottom: 1.3rem;
+}
+.sign-up-container h2{
+font-size: 1.6rem;
+}
+.sign-up-container .sign-up-contain{
+    flex-direction: column;
+    width: 100%;
+    text-align: justify;
+}
+
+.sign-up-container .sign-up-img img{
+   max-height: 180px;
+}
+
 
 
 
@@ -413,6 +492,39 @@
     gap: 1.2rem;
     align-items: center;
 }
+
+
+
+/* sin up section */
+
+.sign-up{
+   
+    height: auto;  
+}
+
+.sign-up-container{
+    width: 90%;
+    gap: 4.2rem;
+    padding-top: 1.9rem;
+    padding-bottom: 1.3rem;
+}
+.sign-up-container h2{
+font-size: 2.2rem;
+text-align: center;
+}
+.sign-up-container .sign-up-contain{
+   
+    width: 90%;
+    text-align: justify;
+}
+
+.sign-up button{
+    margin-top: .9rem;
+}
+.sign-up-container .sign-up-img img{
+   max-height: 200px;
+}
+
 
 
 }
