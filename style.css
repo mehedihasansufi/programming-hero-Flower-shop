@@ -245,7 +245,8 @@
     width: 75%;
     display: flex;
     margin: 2rem auto 0 auto;
-    gap: 1.2rem;
+    justify-content: space-between;
+    
    
 }
 
@@ -262,6 +263,52 @@
 }
 
 
+/* latest deals */
+
+.latest-details-container{
+
+    width: 75%;
+    margin: 5rem auto 0 auto;
+    background-image: url(./asset/Rectangle\ 9.png);
+    height: 400px;
+    background-size: cover;
+    margin-bottom: 200px;
+   background-position: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 1.2rem;
+    
+}
+
+.latest-details-container p{
+    font-size: 1rem;
+}
+
+.subscribe input{
+    border: none;
+    width: 600px;
+    height: 50px;
+    border-radius: 8px;
+    margin-right: 10px;
+    padding-left: 30px;
+}
+
+.subscribe input:focus{
+    
+    outline: none;
+}
+
+.subscribe input::placeholder{
+    color: var(--paragraph-color);
+    font-size: 1rem;
+    text-align: center;
+}
+
+.subscribe button{
+    height: 50px;
+}
 
 
 
@@ -607,6 +654,7 @@ text-align: center;
 .instagram-container-img{
     width: 75%;
     display: grid;
+    gap: 1.6rem;
     grid-template-columns: repeat(2,1fr);
     margin: 2rem auto 0 auto;
    
