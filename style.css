@@ -392,7 +392,7 @@
 .feature-flower-details .flower p{
     margin-top: .9rem;
     font-size: .7rem;
-    margin-left: -40px;
+    
 }
 .feature-flower-details .flower-img {
     
@@ -496,13 +496,22 @@ font-size: 1.6rem;
     margin: 3rem auto 0 auto;
     height: auto;
     background-size: cover;
-    margin-bottom: 200px;
+    
    
     
 }
 
-
-
+.latest-details-container h2{
+    padding-top: 3rem;
+}
+.subscribe {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
 .subscribe input{
     border: none;
     width: 100%;
@@ -511,8 +520,8 @@ font-size: 1.6rem;
     margin-right: 0px;
     padding-left: 0px;
    
+   
 }
-
 
 
 .subscribe input::placeholder{
